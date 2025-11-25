@@ -1,0 +1,154 @@
+{
+  "drinks": [
+    {
+      "id": 1,
+      "name": "Mojito",
+      "category": "Cocktail",
+      "ingredients": ["2 oz White rum", "1 oz Lime juice", "2 tsp Sugar", "6-8 Mint leaves", "Soda water", "Ice"],
+      "instructions": "Muddle mint leaves with sugar and lime juice. Add rum and top with soda water. Garnish with mint sprig.",
+      "image": "https://images.unsplash.com/photo-1546171755-f17d73cc7619?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": true
+    },
+    {
+      "id": 2,
+      "name": "Margarita",
+      "category": "Cocktail",
+      "ingredients": ["2 oz Tequila", "1 oz Lime juice", "1 oz Triple sec", "Salt for rim", "Ice"],
+      "instructions": "Run lime wedge around rim and dip in salt. Shake ingredients with ice, strain into glass.",
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": true
+    },
+    {
+      "id": 3,
+      "name": "Piña Colada",
+      "category": "Cocktail",
+      "ingredients": ["2 oz White rum", "3 oz Pineapple juice", "1 oz Coconut cream", "Ice"],
+      "instructions": "Blend all ingredients with ice until smooth. Garnish with pineapple wedge and cherry.",
+      "image": "https://images.unsplash.com/photo-1579588134598-08ae7849177e?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": true
+    },
+    {
+      "id": 4,
+      "name": "Old Fashioned",
+      "category": "Cocktail",
+      "ingredients": ["2 oz Bourbon", "1 sugar cube", "2-3 dashes Angostura bitters", "Orange peel", "Ice"],
+      "instructions": "Muddle sugar cube with bitters. Add bourbon and ice. Stir and garnish with orange peel.",
+      "image": "https://images.unsplash.com/photo-1514932419552-a7c1b4862ab9?w=400&h=300&fit=crop",
+      "difficulty": "Medium",
+      "alcohol": true
+    },
+    {
+      "id": 5,
+      "name": "Moscow Mule",
+      "category": "Cocktail",
+      "ingredients": ["2 oz Vodka", "4 oz Ginger beer", "1/2 oz Lime juice", "Ice", "Lime wedge"],
+      "instructions": "Build in copper mug with ice. Add vodka and lime juice, top with ginger beer. Garnish with lime.",
+      "image": "https://images.unsplash.com/photo-1546171755-f17d73cc7619?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": true
+    },
+    {
+      "id": 6,
+      "name": "Cosmopolitan",
+      "category": "Cocktail",
+      "ingredients": ["1.5 oz Vodka", "1 oz Cranberry juice", "0.5 oz Lime juice", "0.5 oz Triple sec", "Ice"],
+      "instructions": "Shake all ingredients with ice. Strain into chilled martini glass. Garnish with lime wheel.",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78eea708b?w=400&h=300&fit=crop",
+      "difficulty": "Medium",
+      "alcohol": true
+    },
+    {
+      "id": 7,
+      "name": "Long Island Iced Tea",
+      "category": "Cocktail",
+      "ingredients": ["0.5 oz Vodka", "0.5 oz Rum", "0.5 oz Gin", "0.5 oz Tequila", "0.5 oz Triple sec", "1 oz Lemon juice", "Cola", "Ice"],
+      "instructions": "Combine all spirits and lemon juice with ice. Top with cola. Garnish with lemon.",
+      "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop",
+      "difficulty": "Medium",
+      "alcohol": true
+    },
+    {
+      "id": 8,
+      "name": "Whiskey Sour",
+      "category": "Cocktail",
+      "ingredients": ["2 oz Bourbon", "1 oz Lemon juice", "0.5 oz Simple syrup", "Egg white (optional)", "Ice"],
+      "instructions": "Dry shake ingredients, then shake with ice. Strain over fresh ice. Garnish with cherry and orange.",
+      "image": "https://images.unsplash.com/photo-1556679343-c7315c6e7db7?w=400&h=300&fit=crop",
+      "difficulty": "Medium",
+      "alcohol": true
+    },
+    {
+      "id": 9,
+      "name": "Lemonade",
+      "category": "Non-alcoholic",
+      "ingredients": ["1 cup Lemon juice", "1 cup Sugar", "6 cups Water", "Ice", "Lemon slices"],
+      "instructions": "Mix lemon juice and sugar until dissolved. Add water and chill. Serve over ice with lemon slices.",
+      "image": "https://images.unsplash.com/photo-1622597467836-f3c92ca8e420?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": false
+    },
+    {
+      "id": 10,
+      "name": "Iced Coffee",
+      "category": "Non-alcoholic",
+      "ingredients": ["2 cups Cold brew coffee", "1/2 cup Milk", "2 tbsp Sugar", "Ice", "Coffee beans for garnish"],
+      "instructions": "Brew coffee and let cool. Mix with milk and sugar. Serve over ice. Garnish with coffee beans.",
+      "image": "https://images.unsplash.com/photo-1517701604569-2a2fb75e5b71?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": false
+    },
+    {
+      "id": 11,
+      "name": "Virgin Mary",
+      "category": "Non-alcoholic",
+      "ingredients": ["4 oz Tomato juice", "0.5 oz Lemon juice", "2 dashes Worcestershire sauce", "2 dashes Hot sauce", "Celery salt", "Black pepper", "Celery stalk"],
+      "instructions": "Combine all ingredients in glass with ice. Stir well. Garnish with celery stalk.",
+      "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": false
+    },
+    {
+      "id": 12,
+      "name": "Green Smoothie",
+      "category": "Non-alcoholic",
+      "ingredients": ["1 cup Spinach", "1 banana", "1/2 cup Greek yogurt", "1 cup Almond milk", "1 tbsp Honey", "Ice"],
+      "instructions": "Blend all ingredients until smooth. Add more almond milk if needed for desired consistency.",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": false
+    },
+    {
+      "id": 13,
+      "name": "Mai Tai",
+      "category": "Cocktail",
+      "ingredients": ["1 oz Dark rum", "1 oz Light rum", "0.5 oz Orange curaçao", "0.5 oz Orgeat syrup", "0.75 oz Lime juice", "Ice"],
+      "instructions": "Shake all ingredients with ice. Strain over crushed ice. Garnish with mint and lime.",
+      "image": "https://images.unsplash.com/photo-1582583479503-ab4b8e1b4a93?w=400&h=300&fit=crop",
+      "difficulty": "Medium",
+      "alcohol": true
+    },
+    {
+      "id": 14,
+      "name": "Bellini",
+      "category": "Cocktail",
+      "ingredients": ["2 oz Peach puree", "4 oz Prosecco", "Peach slice for garnish"],
+      "instructions": "Add peach puree to champagne flute. Top with prosecco. Garnish with peach slice.",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": true
+    },
+    {
+      "id": 15,
+      "name": "Hot Chocolate",
+      "category": "Non-alcoholic",
+      "ingredients": ["2 cups Milk", "3 oz Dark chocolate", "2 tbsp Sugar", "1/2 tsp Vanilla extract", "Whipped cream", "Marshmallows"],
+      "instructions": "Heat milk, add chopped chocolate and sugar. Stir until melted. Add vanilla. Top with whipped cream.",
+      "image": "https://images.unsplash.com/photo-1547149600-a6cdf8fce60c?w=400&h=300&fit=crop",
+      "difficulty": "Easy",
+      "alcohol": false
+    }
+  ]
+}

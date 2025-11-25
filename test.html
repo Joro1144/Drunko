@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Recipes Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .card { border: 1px solid #ddd; margin: 10px; padding: 10px; border-radius: 8px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <h1>Drink Recipes Test Page</h1>
+    <div id="status">Loading...</div>
+    <div id="drinks"></div>
+    
+    <script>
+        // Test basic functionality
+        console.log('JavaScript is running');
+        
+        // Test fetch
+        fetch('data/drinks.json')
+            .then(response => {
+                console.log('Fetch response:', response);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Data loaded:', data);
+                document.getElementById('status').innerHTML = '<span class="success">✅ Success! Loaded ' + data.drinks.length + ' drinks</span>';
+                
+                const drinksDiv = document.getElementById('drinks');
+                drinksDiv.innerHTML = data.drinks.slice(0, 3).map(drink => 
+                    `<div class="card">
+                        <h3>${drink.name}</h3>
+                        <p>${drink.category} - ${drink.difficulty}</p>
+                        <p>Ingredients: ${drink.ingredients.slice(0, 3).join(', ')}...</p>
+                    </div>`
+                ).join('');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('status').innerHTML = '<span class="error">❌ Error: ' + error.message + '</span>';
+            });
+    </script>
+</body>
+</html>

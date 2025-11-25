@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Recipes - Mobile Cocktail & Beverage Guide</title>
+    <meta name="description" content="Discover amazing drink recipes with our mobile-friendly cocktail and beverage guide. Search, filter, and explore cocktails and non-alcoholic drinks.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Drink Recipes - Mobile Cocktail & Beverage Guide">
+    <meta property="og:description" content="Discover amazing drink recipes with our mobile-friendly cocktail and beverage guide">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Simple CSS Icons instead of Font Awesome -->
+    <style>
+        .icon-cocktail::before { content: "🍹"; }
+        .icon-search::before { content: "🔍"; }
+        .icon-list::before { content: "📋"; }
+        .icon-book::before { content: "📖"; }
+        .icon-th-large::before { content: "⊞"; }
+        .icon-th::before { content: "⊡"; }
+        .icon-times::before { content: "✕"; }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="icon-cocktail"></span> Drink Recipes</h1>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <span class="icon-search search-icon"></span>
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput" 
+                        placeholder="Search for drinks, ingredients..."
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cocktail">Cocktails</button>
+                    <button class="filter-btn" data-filter="non-alcoholic">Non-alcoholic</button>
+                    <button class="filter-btn" data-filter="alcoholic">With Alcohol</button>
+                    <button class="filter-btn" data-filter="easy">Easy</button>
+                    <button class="filter-btn" data-filter="medium">Medium</button>
+                </div>
+                
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="normal">
+                        <span class="icon-th-large"></span> Normal
+                    </button>
+                    <button class="view-btn" data-view="compact">
+                        <span class="icon-th"></span> Compact
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="drinks-grid" id="drinksGrid">
+                <!-- Drink cards will be dynamically inserted here -->
+            </div>
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <h2><i class="fas fa-search"></i> No Drinks Found</h2>
+                <p>Try adjusting your search or filters to find what you're looking for.</p>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Modal for drink details -->
+    <div class="modal" id="drinkModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="" alt="" class="modal-image" id="modalImage">
+                <button class="modal-close" id="modalClose">
+                    <span class="icon-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <span class="modal-category" id="modalCategory"></span>
+                
+                <div class="ingredients-section">
+                    <h3 class="section-title">
+                        <span class="icon-list"></span> Ingredients
+                    </h3>
+                    <ul class="ingredient-list" id="ingredientsList">
+                        <!-- Ingredients will be dynamically inserted here -->
+                    </ul>
+                </div>
+                
+                <div class="instructions-section">
+                    <h3 class="section-title">
+                        <span class="icon-book"></span> Instructions
+                    </h3>
+                    <p class="instructions" id="instructions"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
