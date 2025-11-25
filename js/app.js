@@ -89,7 +89,7 @@ class DrinkRecipeApp {
             // Search filter
             const matchesSearch = this.currentSearch === '' || 
                 drink.name.toLowerCase().includes(this.currentSearch) ||
-                drink.ingredients.some(ing => ing.toLowerCase().includes(this.currentSearch)) ||
+                JSON.stringify(drink.ingredients).toLowerCase().includes(this.currentSearch) ||
                 drink.category.toLowerCase().includes(this.currentSearch);
             
             // Category filter
@@ -180,6 +180,7 @@ class DrinkRecipeApp {
         const modalTitle = document.getElementById('modalTitle');
         const modalCategory = document.getElementById('modalCategory');
         const ingredientsList = document.getElementById('ingredientsList');
+        const variationsList = document.getElementById('variationsList');
         const instructions = document.getElementById('instructions');
         
         // Set modal content
@@ -188,10 +189,85 @@ class DrinkRecipeApp {
         modalTitle.textContent = drink.name;
         modalCategory.textContent = drink.category;
         
-        // Render ingredients
-        ingredientsList.innerHTML = drink.ingredients.map(ingredient => 
-            `<li class="ingredient-item">${ingredient}</li>`
-        ).join('');
+        // Render ingredients by category
+        const categoryIcons = {
+            spirits: '🥃',
+            liqueurs: '🍾', 
+            mixers: '🥤',
+            citrus: '🍋',
+            sweeteners: '🍯',
+            garnishes: '🌿',
+            creams: '🥛',
+            coffee: '☕',
+            dairy: '🥛',
+            fruits: '🍓',
+            greens: '🥬',
+            liquids: '💧',
+            ice: '🧊',
+            sauces: '🍶',
+            seasonings: '🧂',
+            additions: '✨',
+            sparkling: '🥂'
+        };
+        
+        const categoryDisplayNames = {
+            spirits: 'Spirits',
+            liqueurs: 'Liqueurs',
+            mixers: 'Mixers', 
+            citrus: 'Citrus',
+            sweeteners: 'Sweeteners',
+            garnishes: 'Garnishes',
+            creams: 'Creams & Dairy',
+            coffee: 'Coffee',
+            dairy: 'Dairy',
+            fruits: 'Fruits',
+            greens: 'Greens',
+            liquids: 'Liquids',
+            ice: 'Ice',
+            sauces: 'Sauces',
+            seasonings: 'Seasonings',
+            additions: 'Additions',
+            sparkling: 'Sparkling'
+        };
+        
+        let ingredientsHTML = '';
+        Object.entries(drink.ingredients).forEach(([category, items]) => {
+            if (items && items.length > 0) {
+                const icon = categoryIcons[category] || '📋';
+                const displayName = categoryDisplayNames[category] || category.charAt(0).toUpperCase() + category.slice(1);
+                
+                ingredientsHTML += `
+                    <div class="ingredient-category">
+                        <div class="category-title">
+                            <span class="category-icon">${icon}</span>
+                            ${displayName}
+                        </div>
+                        <ul class="ingredient-list">
+                            ${items.map(ingredient => 
+                                `<li class="ingredient-item">${ingredient}</li>`
+                            ).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+        });
+        ingredientsList.innerHTML = ingredientsHTML;
+        
+        // Render variations
+        if (drink.variations && drink.variations.length > 0) {
+            variationsList.innerHTML = drink.variations.map(variation => `
+                <div class="variation-item">
+                    <div class="variation-name">${variation.name}</div>
+                    <div class="variation-modifications">
+                        <ul>
+                            ${variation.modifications.map(mod => `<li>${mod}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `).join('');
+        } else {
+            variationsList.innerHTML = '<p style="color: #718096; font-style: italic;">No variations available for this drink.</p>';
+        }
         
         // Set instructions
         instructions.textContent = drink.instructions;

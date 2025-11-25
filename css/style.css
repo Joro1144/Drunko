@@ -176,6 +176,9 @@ h1 {
     font-weight: 600;
     color: #2d3748;
     margin-bottom: 5px;
+    font-family: 'Playfair Display', 'DM Serif Display', Georgia, serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 .drinks-grid.compact .drink-name {
@@ -309,6 +312,9 @@ h1 {
     font-weight: 700;
     color: #2d3748;
     margin-bottom: 15px;
+    font-family: 'Playfair Display', 'DM Serif Display', Georgia, serif;
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 .modal-category {
@@ -336,24 +342,110 @@ h1 {
     gap: 8px;
 }
 
+.ingredient-categories {
+    margin-bottom: 20px;
+}
+
+.ingredient-category {
+    margin-bottom: 15px;
+}
+
+.category-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #667eea;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.category-icon {
+    font-size: 0.8rem;
+}
+
 .ingredient-list {
     list-style: none;
     padding: 0;
 }
 
 .ingredient-item {
-    padding: 10px 15px;
+    padding: 8px 12px;
     background: #f7fafc;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    border-left: 4px solid #667eea;
-    font-size: 0.95rem;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    border-left: 3px solid #667eea;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
 .ingredient-item:hover {
     background: #edf2f7;
-    transform: translateX(5px);
+    transform: translateX(3px);
+}
+
+/* Variations Section */
+.variations-section {
+    margin-bottom: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.variation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.variation-item {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #a78bfa;
+    transition: all 0.3s ease;
+}
+
+.variation-item:hover {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(167, 139, 250, 0.1);
+}
+
+.variation-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5b21b6;
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', 'DM Serif Display', Georgia, serif;
+    font-style: italic;
+}
+
+.variation-modifications {
+    font-size: 0.85rem;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.variation-modifications ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.variation-modifications li {
+    padding: 3px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+.variation-modifications li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #a78bfa;
+    font-weight: bold;
 }
 
 .instructions {

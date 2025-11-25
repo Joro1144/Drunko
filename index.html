@@ -14,6 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     
+    <!-- Google Fonts - Orchidea Pro (closest to Orchidea Couture) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <!-- Simple CSS Icons instead of Font Awesome -->
     <style>
         .icon-cocktail::before { content: "🍹"; }
@@ -92,9 +97,18 @@
                     <h3 class="section-title">
                         <span class="icon-list"></span> Ingredients
                     </h3>
-                    <ul class="ingredient-list" id="ingredientsList">
-                        <!-- Ingredients will be dynamically inserted here -->
-                    </ul>
+                    <div class="ingredient-categories" id="ingredientsList">
+                        <!-- Ingredient categories will be dynamically inserted here -->
+                    </div>
+                </div>
+                
+                <div class="variations-section">
+                    <h3 class="section-title">
+                        <span class="icon-book"></span> Variations
+                    </h3>
+                    <div class="variation-list" id="variationsList">
+                        <!-- Variations will be dynamically inserted here -->
+                    </div>
                 </div>
                 
                 <div class="instructions-section">

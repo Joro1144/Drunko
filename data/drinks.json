@@ -4,151 +4,451 @@
       "id": 1,
       "name": "Mojito",
       "category": "Cocktail",
-      "ingredients": ["2 oz White rum", "1 oz Lime juice", "2 tsp Sugar", "6-8 Mint leaves", "Soda water", "Ice"],
+      "ingredients": {
+        "spirits": ["2 oz White rum"],
+        "mixers": ["4 oz Soda water"],
+        "citrus": ["1 oz Lime juice"],
+        "sweeteners": ["2 tsp Sugar"],
+        "garnishes": ["6-8 Mint leaves", "Lime wedge"]
+      },
       "instructions": "Muddle mint leaves with sugar and lime juice. Add rum and top with soda water. Garnish with mint sprig.",
       "image": "https://images.unsplash.com/photo-1546171755-f17d73cc7619?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Strawberry Mojito",
+          "modifications": ["Add 4-5 muddled strawberries", "Use strawberry syrup instead of sugar"]
+        },
+        {
+          "name": "Coconut Mojito",
+          "modifications": ["Replace soda water with coconut water", "Add 1 oz coconut cream"]
+        },
+        {
+          "name": "Spicy Mojito",
+          "modifications": ["Muddle 2-3 jalapeño slices with mint", "Add a pinch of cayenne pepper"]
+        }
+      ]
     },
     {
       "id": 2,
       "name": "Margarita",
       "category": "Cocktail",
-      "ingredients": ["2 oz Tequila", "1 oz Lime juice", "1 oz Triple sec", "Salt for rim", "Ice"],
+      "ingredients": {
+        "spirits": ["2 oz Tequila"],
+        "liqueurs": ["1 oz Triple sec"],
+        "citrus": ["1 oz Lime juice"],
+        "sweeteners": ["0.5 oz Agave nectar"],
+        "garnishes": ["Salt for rim", "Lime wheel"]
+      },
       "instructions": "Run lime wedge around rim and dip in salt. Shake ingredients with ice, strain into glass.",
       "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Spicy Margarita",
+          "modifications": ["Add muddled jalapeño slices", "Use chili-lime salt for rim"]
+        },
+        {
+          "name": "Mango Margarita",
+          "modifications": ["Add 2 oz mango puree", "Reduce lime juice to 0.5 oz"]
+        },
+        {
+          "name": "Mezcal Margarita",
+          "modifications": ["Replace tequila with mezcal", "Add 0.25 oz smoked simple syrup"]
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Piña Colada",
       "category": "Cocktail",
-      "ingredients": ["2 oz White rum", "3 oz Pineapple juice", "1 oz Coconut cream", "Ice"],
+      "ingredients": {
+        "spirits": ["2 oz White rum"],
+        "mixers": ["3 oz Pineapple juice"],
+        "creams": ["1 oz Coconut cream"],
+        "sweeteners": ["0.5 oz Simple syrup"],
+        "garnishes": ["Pineapple wedge", "Maraschino cherry"]
+      },
       "instructions": "Blend all ingredients with ice until smooth. Garnish with pineapple wedge and cherry.",
       "image": "https://images.unsplash.com/photo-1579588134598-08ae7849177e?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Virgin Piña Colada",
+          "modifications": ["Omit rum", "Add 1 oz more pineapple juice"]
+        },
+        {
+          "name": "Chocolate Piña Colada",
+          "modifications": ["Add 0.5 oz chocolate syrup", "Garnish with chocolate shavings"]
+        },
+        {
+          "name": "Spiced Piña Colada",
+          "modifications": ["Add 0.25 oz cinnamon simple syrup", "Use spiced rum"]
+        }
+      ]
     },
     {
       "id": 4,
       "name": "Old Fashioned",
       "category": "Cocktail",
-      "ingredients": ["2 oz Bourbon", "1 sugar cube", "2-3 dashes Angostura bitters", "Orange peel", "Ice"],
+      "ingredients": {
+        "spirits": ["2 oz Bourbon whiskey"],
+        "bitters": ["2-3 dashes Angostura bitters"],
+        "sweeteners": ["1 sugar cube"],
+        "citrus": ["Orange peel"],
+        "garnishes": ["Orange twist", "Luxardo cherry"]
+      },
       "instructions": "Muddle sugar cube with bitters. Add bourbon and ice. Stir and garnish with orange peel.",
       "image": "https://images.unsplash.com/photo-1514932419552-a7c1b4862ab9?w=400&h=300&fit=crop",
       "difficulty": "Medium",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Rye Old Fashioned",
+          "modifications": ["Replace bourbon with rye whiskey", "Add orange bitters"]
+        },
+        {
+          "name": "Maple Old Fashioned",
+          "modifications": ["Replace sugar cube with 0.5 oz maple syrup", "Use bacon fat wash on glass"]
+        },
+        {
+          "name": "Smoked Old Fashioned",
+          "modifications": ["Smoke the glass with cherry wood", "Add smoked simple syrup"]
+        }
+      ]
     },
     {
       "id": 5,
       "name": "Moscow Mule",
       "category": "Cocktail",
-      "ingredients": ["2 oz Vodka", "4 oz Ginger beer", "1/2 oz Lime juice", "Ice", "Lime wedge"],
+      "ingredients": {
+        "spirits": ["2 oz Vodka"],
+        "mixers": ["4 oz Ginger beer"],
+        "citrus": ["0.5 oz Lime juice"],
+        "sweeteners": ["Optional: 0.25 oz simple syrup"],
+        "garnishes": ["Lime wedge", "Fresh mint"]
+      },
       "instructions": "Build in copper mug with ice. Add vodka and lime juice, top with ginger beer. Garnish with lime.",
       "image": "https://images.unsplash.com/photo-1546171755-f17d73cc7619?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Kentucky Mule",
+          "modifications": ["Replace vodka with bourbon", "Use copper mug"]
+        },
+        {
+          "name": "Mexican Mule",
+          "modifications": ["Replace vodka with tequila", "Add Tajín to rim"]
+        },
+        {
+          "name": "London Mule",
+          "modifications": ["Replace vodka with gin", "Add cucumber slices"]
+        }
+      ]
     },
     {
       "id": 6,
       "name": "Cosmopolitan",
       "category": "Cocktail",
-      "ingredients": ["1.5 oz Vodka", "1 oz Cranberry juice", "0.5 oz Lime juice", "0.5 oz Triple sec", "Ice"],
+      "ingredients": {
+        "spirits": ["1.5 oz Vodka"],
+        "liqueurs": ["0.5 oz Triple sec"],
+        "mixers": ["1 oz Cranberry juice"],
+        "citrus": ["0.5 oz Lime juice"],
+        "garnishes": ["Lime wheel", "Orange twist"]
+      },
       "instructions": "Shake all ingredients with ice. Strain into chilled martini glass. Garnish with lime wheel.",
       "image": "https://images.unsplash.com/photo-1551024601-bec78eea708b?w=400&h=300&fit=crop",
       "difficulty": "Medium",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "White Cosmopolitan",
+          "modifications": ["Use white cranberry juice", "Garnish with white peach"]
+        },
+        {
+          "name": "Raspberry Cosmo",
+          "modifications": ["Muddle 3-4 fresh raspberries", "Use raspberry vodka"]
+        },
+        {
+          "name": "Pomegranate Cosmo",
+          "modifications": ["Replace cranberry with pomegranate juice", "Add pomegranate seeds"]
+        }
+      ]
     },
     {
       "id": 7,
       "name": "Long Island Iced Tea",
       "category": "Cocktail",
-      "ingredients": ["0.5 oz Vodka", "0.5 oz Rum", "0.5 oz Gin", "0.5 oz Tequila", "0.5 oz Triple sec", "1 oz Lemon juice", "Cola", "Ice"],
+      "ingredients": {
+        "spirits": ["0.5 oz Vodka", "0.5 oz Rum", "0.5 oz Gin", "0.5 oz Tequila"],
+        "liqueurs": ["0.5 oz Triple sec"],
+        "citrus": ["1 oz Lemon juice"],
+        "mixers": ["Cola to top"],
+        "garnishes": ["Lemon wedge"]
+      },
       "instructions": "Combine all spirits and lemon juice with ice. Top with cola. Garnish with lemon.",
       "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop",
       "difficulty": "Medium",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "California Iced Tea",
+          "modifications": ["Replace cola with cranberry juice", "Add 0.5 oz amaretto"]
+        },
+        {
+          "name": "Adios Motherfucker",
+          "modifications": ["Replace cola with Blue Curaçao", "Add lemon-lime soda"]
+        },
+        {
+          "name": "Texas Tea",
+          "modifications": ["Add 0.5 oz bourbon", "Use sweet tea instead of cola"]
+        }
+      ]
     },
     {
       "id": 8,
       "name": "Whiskey Sour",
       "category": "Cocktail",
-      "ingredients": ["2 oz Bourbon", "1 oz Lemon juice", "0.5 oz Simple syrup", "Egg white (optional)", "Ice"],
+      "ingredients": {
+        "spirits": ["2 oz Bourbon whiskey"],
+        "citrus": ["1 oz Lemon juice"],
+        "sweeteners": ["0.5 oz Simple syrup"],
+        "additions": ["Egg white (optional)"],
+        "garnishes": ["Maraschino cherry", "Orange slice"]
+      },
       "instructions": "Dry shake ingredients, then shake with ice. Strain over fresh ice. Garnish with cherry and orange.",
       "image": "https://images.unsplash.com/photo-1556679343-c7315c6e7db7?w=400&h=300&fit=crop",
       "difficulty": "Medium",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "New York Sour",
+          "modifications": ["Float 0.5 oz red wine on top", "Use rye whiskey"]
+        },
+        {
+          "name": "Amaretto Sour",
+          "modifications": ["Replace bourbon with amaretto", "Add 0.25 oz lemon juice"]
+        },
+        {
+          "name": "Apple Sour",
+          "modifications": ["Add 1 oz apple cider", "Use apple brandy instead of bourbon"]
+        }
+      ]
     },
     {
       "id": 9,
       "name": "Lemonade",
       "category": "Non-alcoholic",
-      "ingredients": ["1 cup Lemon juice", "1 cup Sugar", "6 cups Water", "Ice", "Lemon slices"],
+      "ingredients": {
+        "citrus": ["1 cup Lemon juice"],
+        "sweeteners": ["1 cup Sugar"],
+        "mixers": ["6 cups Water"],
+        "ice": ["Ice cubes"],
+        "garnishes": ["Lemon slices", "Fresh mint"]
+      },
       "instructions": "Mix lemon juice and sugar until dissolved. Add water and chill. Serve over ice with lemon slices.",
       "image": "https://images.unsplash.com/photo-1622597467836-f3c92ca8e420?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": false
+      "alcohol": false,
+      "variations": [
+        {
+          "name": "Strawberry Lemonade",
+          "modifications": ["Add 1 cup strawberry puree", "Garnish with fresh strawberries"]
+        },
+        {
+          "name": "Sparkling Lemonade",
+          "modifications": ["Replace half water with sparkling water", "Add elderflower syrup"]
+        },
+        {
+          "name": "Lavender Lemonade",
+          "modifications": ["Add 2 tbsp dried lavender", "Use honey instead of sugar"]
+        }
+      ]
     },
     {
       "id": 10,
       "name": "Iced Coffee",
       "category": "Non-alcoholic",
-      "ingredients": ["2 cups Cold brew coffee", "1/2 cup Milk", "2 tbsp Sugar", "Ice", "Coffee beans for garnish"],
+      "ingredients": {
+        "coffee": ["2 cups Cold brew coffee"],
+        "dairy": ["0.5 cup Milk or cream"],
+        "sweeteners": ["2 tbsp Sugar or syrup"],
+        "ice": ["Ice cubes"],
+        "garnishes": ["Coffee beans", "Cocoa powder"]
+      },
       "instructions": "Brew coffee and let cool. Mix with milk and sugar. Serve over ice. Garnish with coffee beans.",
       "image": "https://images.unsplash.com/photo-1517701604569-2a2fb75e5b71?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": false
+      "alcohol": false,
+      "variations": [
+        {
+          "name": "Vietnamese Iced Coffee",
+          "modifications": ["Use condensed milk instead of regular milk", "Add 0.5 oz vanilla extract"]
+        },
+        {
+          "name": "Mocha Iced Coffee",
+          "modifications": ["Add 1 tbsp chocolate syrup", "Top with whipped cream"]
+        },
+        {
+          "name": "Caramel Iced Coffee",
+          "modifications": ["Add 1 tbsp caramel sauce", "Use caramel syrup for sweetener"]
+        }
+      ]
     },
     {
       "id": 11,
       "name": "Virgin Mary",
       "category": "Non-alcoholic",
-      "ingredients": ["4 oz Tomato juice", "0.5 oz Lemon juice", "2 dashes Worcestershire sauce", "2 dashes Hot sauce", "Celery salt", "Black pepper", "Celery stalk"],
+      "ingredients": {
+        "mixers": ["4 oz Tomato juice"],
+        "citrus": ["0.5 oz Lemon juice"],
+        "sauces": ["2 dashes Worcestershire sauce", "2 dashes Hot sauce"],
+        "seasonings": ["Celery salt", "Black pepper"],
+        "garnishes": ["Celery stalk", "Lime wedge"]
+      },
       "instructions": "Combine all ingredients in glass with ice. Stir well. Garnish with celery stalk.",
       "image": "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": false
+      "alcohol": false,
+      "variations": [
+        {
+          "name": "Spicy Virgin Mary",
+          "modifications": ["Add extra hot sauce", "Muddle jalapeño slices", "Add horseradish"]
+        },
+        {
+          "name": "Green Mary",
+          "modifications": ["Replace tomato juice with green tomato juice", "Add tomatillo puree"]
+        },
+        {
+          "name": "Bloody Caesar",
+          "modifications": ["Replace tomato juice with clamato juice", "Add celery salt to rim"]
+        }
+      ]
     },
     {
       "id": 12,
       "name": "Green Smoothie",
       "category": "Non-alcoholic",
-      "ingredients": ["1 cup Spinach", "1 banana", "1/2 cup Greek yogurt", "1 cup Almond milk", "1 tbsp Honey", "Ice"],
+      "ingredients": {
+        "greens": ["1 cup Spinach"],
+        "fruits": ["1 banana"],
+        "dairy": ["0.5 cup Greek yogurt"],
+        "liquids": ["1 cup Almond milk"],
+        "sweeteners": ["1 tbsp Honey"]
+      },
       "instructions": "Blend all ingredients until smooth. Add more almond milk if needed for desired consistency.",
       "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": false
+      "alcohol": false,
+      "variations": [
+        {
+          "name": "Protein Green Smoothie",
+          "modifications": ["Add 1 scoop protein powder", "Use almond butter"]
+        },
+        {
+          "name": "Tropical Green Smoothie",
+          "modifications": ["Add 0.5 cup pineapple", "Add 0.5 cup mango", "Use coconut milk"]
+        },
+        {
+          "name": "Berry Green Smoothie",
+          "modifications": ["Add 0.5 cup mixed berries", "Use oat milk instead of almond milk"]
+        }
+      ]
     },
     {
       "id": 13,
       "name": "Mai Tai",
       "category": "Cocktail",
-      "ingredients": ["1 oz Dark rum", "1 oz Light rum", "0.5 oz Orange curaçao", "0.5 oz Orgeat syrup", "0.75 oz Lime juice", "Ice"],
+      "ingredients": {
+        "spirits": ["1 oz Dark rum", "1 oz Light rum"],
+        "liqueurs": ["0.5 oz Orange curaçao"],
+        "syrups": ["0.5 oz Orgeat syrup"],
+        "citrus": ["0.75 oz Lime juice"],
+        "garnishes": ["Mint sprig", "Lime wedge", "Pineapple chunk"]
+      },
       "instructions": "Shake all ingredients with ice. Strain over crushed ice. Garnish with mint and lime.",
       "image": "https://images.unsplash.com/photo-1582583479503-ab4b8e1b4a93?w=400&h=300&fit=crop",
       "difficulty": "Medium",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Vampire Tai",
+          "modifications": ["Add 0.5 oz passion fruit syrup", "Use aged rum"]
+        },
+        {
+          "name": "Pineapple Mai Tai",
+          "modifications": ["Add 1 oz pineapple juice", "Garnish with pineapple leaves"]
+        },
+        {
+          "name": "Smoky Mai Tai",
+          "modifications": ["Use smoked dark rum", "Add 0.25 oz honey syrup"]
+        }
+      ]
     },
     {
       "id": 14,
       "name": "Bellini",
       "category": "Cocktail",
-      "ingredients": ["2 oz Peach puree", "4 oz Prosecco", "Peach slice for garnish"],
+      "ingredients": {
+        "fruits": ["2 oz Peach puree"],
+        "sparkling": ["4 oz Prosecco"],
+        "liqueurs": ["Optional: 0.5 oz peach schnapps"],
+        "citrus": ["Optional: 0.25 oz lemon juice"],
+        "garnishes": ["Peach slice"]
+      },
       "instructions": "Add peach puree to champagne flute. Top with prosecco. Garnish with peach slice.",
       "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": true
+      "alcohol": true,
+      "variations": [
+        {
+          "name": "Rossini",
+          "modifications": ["Replace peach puree with strawberry puree", "Garnish with strawberry"]
+        },
+        {
+          "name": "Tintoretto",
+          "modifications": ["Replace peach puree with pomegranate juice", "Add pomegranate seeds"]
+        },
+        {
+          "name": "Mimosa",
+          "modifications": ["Replace peach puree with orange juice", "Add triple sec"]
+        }
+      ]
     },
     {
       "id": 15,
       "name": "Hot Chocolate",
       "category": "Non-alcoholic",
-      "ingredients": ["2 cups Milk", "3 oz Dark chocolate", "2 tbsp Sugar", "1/2 tsp Vanilla extract", "Whipped cream", "Marshmallows"],
+      "ingredients": {
+        "dairy": ["2 cups Milk"],
+        "chocolate": ["3 oz Dark chocolate"],
+        "sweeteners": ["2 tbsp Sugar"],
+        "flavors": ["0.5 tsp Vanilla extract"],
+        "toppings": ["Whipped cream", "Marshmallows", "Chocolate shavings"]
+      },
       "instructions": "Heat milk, add chopped chocolate and sugar. Stir until melted. Add vanilla. Top with whipped cream.",
       "image": "https://images.unsplash.com/photo-1547149600-a6cdf8fce60c?w=400&h=300&fit=crop",
       "difficulty": "Easy",
-      "alcohol": false
+      "alcohol": false,
+      "variations": [
+        {
+          "name": "Mexican Hot Chocolate",
+          "modifications": ["Add cinnamon and chili powder", "Use cinnamon sticks for garnish"]
+        },
+        {
+          "name": "Peppermint Hot Chocolate",
+          "modifications": ["Add peppermint extract", "Top with crushed candy canes"]
+        },
+        {
+          "name": "Salted Caramel Hot Chocolate",
+          "modifications": ["Add caramel sauce", "Top with sea salt", "Use caramel syrup"]
+        }
+      ]
     }
   ]
 }
